@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">    
+    <title>Tour and Travel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="Style/Style.css" rel="stylesheet">   
+    <link href="Style/bootstrap.min.css" rel="stylesheet"> 
+	<link href="Style/font-awesome.css" rel="stylesheet"> 
+	<link href="Style/calendar.css" rel="stylesheet" type="text/css" />
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/jquery-calendar.js"></script>
+	<script type="text/javascript" src="js/jquery-ui-1.js"></script>
+</head>
+
+<body>
+
+    <header class="header">
+		<div class="wrap">
+			<!--logo-->
+			<div class="logo"><a href="index.html" title="Book Your Travel"><img src="images/logo.png" alt="Book Your Travel"></a></div>
+			<!--//logo-->		
+			
+			<!--search-->
+			<div class="search">
+				<form id="search-form" method="get" action="search-form">
+					<input type="search" placeholder="Search entire site here" name="site_search"  /> 
+					<input type="submit" class="search-icon" value="submit-site-search" name="submit-site-search" />
+				</form>
+				
+			</div>
+			<!--//search-->
+			
+			<!--contact-->
+			<div class="contact">
+				<span>24/7 Support number</span>
+				<span class="number">+91 9560465588</span>
+			</div>
+			<!--//contact-->
+		</div>		
+	</header>
+    <nav class="navbar navbar-inverse " role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Axis Travel</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav pull-right">
+                    <li><a href="index.html">Home</a></li>                    
+                    <li><a href="destination.html">Desinations</a></li>
+                    <li><a href="trips.html">Trips</a></li>
+                    <li><a href="hotels.html">Hotel</a></li>
+					<li><a href="flight.html">Flight</a></li>                    
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+	<div class="slider rl">
+	 <img src="images/slider2.jpg" />
+	 <div class="col-md-4 col-xs-12 col-sm-8 ab bookblock">
+            <div class="panel panel-primary bg">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Booking</h3>
+                    <span class="pull-right">
+                        <!-- Tabs -->
+                        <ul class="nav panel-tabs">
+                            <li class="active"><a href="#tab1" data-toggle="tab">Flight Book</a></li>
+                            <li><a href="#tab2" data-toggle="tab">Hotel Book</a></li>                                                     
+                        </ul>
+                    </span>
+                </div>
+                <div class="panel-body white-color">
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="tab1">
+							<form>
+							<div class="col-md-6 margin-bottom-10"><input type="radio" checked="checked"/>&nbsp;One way</div>
+							<div class="col-md-6 margin-bottom-10"><input type="radio" />&nbsp;Round way</div>
+							<label>Leaving from</label>
+							<input type="text" value="" placeholder="City, region, district or specific airport" class="input-xlarge trans">
+							<label>Going to</label>
+							<input type="text" value="" placeholder="City, region, district or specific airport" class="input-xlarge trans">
+							<label>Depart On</label>
+							<input type="text" class="input-xlarge datepicker dateicon" />
+							<label>Return on</label>
+							<input type="text" class="input-xlarge datepicker dateicon" />
+							<label>Adult</label>
+							<select class="input-xlarge person-select transselect">
+							 <option>1</option>
+							 <option>2</option>
+							 <option>3</option>									
+							</select>
+							<label class="margin-left-20">Kids</label>
+							<select class="input-xlarge person-select transselect">
+							 <option>0</option>
+							 <option>1</option>
+							 <option>2</option>									
+							</select>
+							<div class="col-md-12 text-center margin-top-20 margin-bottom-10"><button class="btn btn-primary">SEARCH</button></div>
+							</form>
+							
+							
+						</div>
+                        <div class="tab-pane" id="tab2">
+						  <form>
+							<label>Your Destination</label>
+							<input type="text" value="" placeholder="City, region, district or specific hotel" class="input-xlarge trans">							
+							<label>Check-in Date</label>
+							<input type="text" class="input-xlarge datepicker dateicon" />
+							<label>Check-Out Date</label>
+							<input type="text" class="input-xlarge datepicker dateicon" />
+							<label>Rooms</label>
+							<select class="input-xlarge person-select transselect">
+							 <option>1</option>
+							 <option>2</option>
+							 <option>3</option>									
+							</select>
+							<label class="margin-left-20">Adult</label>
+							<select class="input-xlarge person-select transselect">
+							 <option>1</option>
+							 <option>2</option>
+							 <option>3</option>									
+							</select>
+							<label class="margin-left-20">Kids</label>
+							<select class="input-xlarge person-select transselect">
+							 <option>0</option>
+							 <option>1</option>
+							 <option>2</option>									
+							</select>
+							<div class="col-md-12 text-center margin-top-20 margin-bottom-10"><button class="btn btn-primary">SEARCH</button></div>
+							</form>
+						</div>
+                                            
+                    </div>
+                </div>
+            </div>
+        </div>
+	</div>
+    
+	<div class="col-md-12 clearfix">
+	<div class="col-md-3 destinations col-xs-12 col-sm-6">
+		<article class="one-fourth clearfix">
+		<figure><a href="" title=""><img src="images/paris.jpg" alt=""></a></figure>
+		<div class="details">
+		<a href="" title="View all" class="gradient-button">View all</a>
+		<h4>Paris</h4>
+		<span class="count">1529 Hotels</span>		
+		</div>
+		</article>
+	</div>
+    <div class="destinations col-md-3 col-xs-12 col-sm-6">
+		<article class="one-fourth clearfix">
+		<figure><a href="" title=""><img src="images/amsterdam.jpg" alt=""></a></figure>
+		<div class="details">
+		<a href="" title="View all" class="gradient-button">View all</a>
+		<h4>Amsterdam</h4>
+		<span class="count">929 Hotels</span>		
+		</div>
+		</article>
+	</div>	
+	<div class="destinations col-md-3 col-xs-12 col-sm-6">
+		<article class="one-fourth clearfix">
+			<figure><a href="" title=""><img src="images/saint-petersburg.jpg" alt=""></a></figure>
+			<div class="details">
+				<a href="" title="View all" class="gradient-button">View all</a>
+				<h4>St Petersburg</h4>
+				<span class="count">658 Hotels</span>		
+			</div>
+	 </article>
+	</div>	
+	<div class="destinations col-md-3 col-xs-12 col-sm-6">
+		<article class="one-fourth clearfix">
+		<figure><a href="" title=""><img src="images/prague.jpg" alt=""></a></figure>
+			<div class="details">
+				<a href="" title="View all" class="gradient-button">View all</a>
+				<h4>Prague</h4>
+				<span class="count">829 Hotels</span>			
+			</div>
+		</article>
+	</div>		
+	<div class="col-md-3 destinations col-xs-12 col-sm-6">
+		<article class="one-fourth clearfix">
+		  <figure><a href="" title=""><img src="images/bali.jpg" alt=""></a></figure>
+		  <div class="details">
+		    <a href="" title="View all" class="gradient-button">View all</a>
+		    <h4>Bali</h4>
+		    <span class="count">1529 Hotels</span>		
+		  </div>
+		</article>
+	</div>
+    <div class="destinations col-md-3 col-xs-12 col-sm-6">
+	  <article class="one-fourth clearfix">
+		<figure><a href="" title=""><img src="images/Istanbul.jpg" alt=""></a></figure>
+		<div class="details">
+			<a href="" title="View all" class="gradient-button">View all</a>
+			<h4>Istanbul</h4>
+			<span class="count">929 Hotels</span>			
+		</div>
+	  </article>
+	</div>		
+	<div class="destinations col-md-3 col-xs-12 col-sm-6">
+		<article class="one-fourth clearfix">
+		<figure><a href="" title=""><img src="images/ohio.jpg" alt=""></a></figure>
+		<div class="details">
+			<a href="" title="View all" class="gradient-button">View all</a>
+			<h4>Ohio</h4>
+			<span class="count">658 Hotels</span>			
+		</div>
+	</article>
+	</div>	
+	<div class="destinations col-md-3 col-xs-12 col-sm-6">
+		<article class="one-fourth clearfix">
+		<figure><a href="" title=""><img src="images/venice.jpg" alt=""></a></figure>
+		<div class="details">
+			<a href="" title="View all" class="gradient-button">View all</a>
+			<h4>Venice</h4>
+			<span class="count">829 Hotels</span>			
+		</div>
+	</article>
+	</div>						
+	</div>
+<div class="clearfix"></div>	
+	
+    <footer id="footer-page">
+	 <div class="container">
+	 <div class="row">
+	  <div class="col-md-3">
+	   <div class="widget widget_contact_info">
+	    <div class="widget_background">
+		 <div class="widget_background__half">
+		  <div class="bg"></div>
+		 </div>
+		  <div class="widget_background__half">
+		  <div class="bg"></div>
+		  </div>
+		  </div>
+		  <div class="logo"><img src="images/logo-footer.png" alt=""></div>
+		  <div class="widget_content"><p>1502 D, Gaur Global Village, Crossing Republic</p>
+		  <p>+91 9560465588</p>
+		  <a href="#" style="color:#FFFFFF">contact@gmail.com</a>		  </div>
+		  </div>
+	   </div>
+		  <div class="col-md-2">
+		  <div class="widget widget_about_us">
+		   <h3>About Us</h3>
+		   <div class="widget_content">
+		   <p>All Book Your Travel Hotels fulfil strict selection criteria. Each hotel is chosen individually and inclusion cannot be bought.</p>
+		   </div>
+		   </div>
+		   </div>
+		   <div class="col-md-2">
+		   <div class="widget widget_categories">
+		   <h3>Categiries</h3>
+		   <ul>
+		   <li><a href="#">Countries</a></li>
+		   <li><a href="#">Regions</a></li>
+		   <li><a href="#">Cities</a></li>
+		   <li><a href="#">Districts</a></li>
+		   <li><a href="#">Countries</a></li>
+		   <li><a href="#">Airports</a></li>
+		   <li><a href="#">Hotels</a></li>
+		   <li><a href="#">Places of interest</a></li>
+		   </ul>
+		   </div>
+		   </div>
+		   <div class="col-md-2">
+		   <div class="widget widget_recent_entries">
+		   <h3>Recent Blog</h3>
+		   <ul>
+		   <li>
+		   <a href="#">Countries</a></li>
+		   <li><a href="#">Regions</a></li>
+		   <li><a href="#">Cities</a></li>
+		   <li><a href="#">Districts</a></li>
+		   <li><a href="#">Countries</a></li>
+		   <li><a href="#">Airports</a></li>
+		   <li><a href="#">Hotels</a></li>
+		   <li><a href="#">Places of interest</a></li>
+		   </ul>
+		   </div>
+		   </div>
+		   <div class="col-md-3">
+		   <div class="widget widget_follow_us">
+		   <div class="widget_content">
+		   <p>For Special booking request, please call</p>
+		   <span class="phone">+91 9560465588</span>
+		   <div class="awe-social">
+		    <a href="#"><i class="fa fa-twitter"></i></a>
+		    <a href="#"><i class="fa fa-pinterest"></i></a>
+			<a href="#"><i class="fa fa-facebook"></i></a>
+			
+			</div>
+			</div>
+			</div>
+			</div>
+			</div>
+			<div class="copyright"><p>©2017 Axis Travel, All rights reserved.</p></div></div></footer>
+
+   
+<script type="text/javascript">
+$( function() {
+    $( ".datepicker" ).datepicker();	
+  } );
+</script>
+</body>
+</html>
