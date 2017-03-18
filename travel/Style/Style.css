@@ -21,7 +21,11 @@
     float: left;
     display: block;
     padding: 15px 0;
+   font-size:35px;
 }
+
+.logo a{color:#000;} .logo a:hover{text-decoration:none; color:#000;}
+ 
 .header .search {
     float: right;
     display: block;
@@ -552,3 +556,66 @@ article h4, blockquote i {
     -moz-box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
 }
+
+
+.eastZone{position: fixed;
+    background: #41afaa;
+    font-size: 40px;
+    z-index: 11111;
+    border-radius: 100px;
+    height: 125px;
+    box-shadow: 1px 0px 7px 7px #ccc;
+    opacity: .8;
+    top: 14px;
+    left: 28px; width:134px; text-align: center; cursor:pointer;
+  }
+
+.eastZone span{margin-top: 42px;  display: inline-block;}
+
+
+.westZone{position: fixed;
+    background: #337ab7;
+    font-size: 40px;
+    z-index: 11111;
+    border-radius: 100px;
+    height: 125px;
+    box-shadow: 1px 0px 7px 7px #ccc;
+    opacity: .8;
+    top: 14px;
+    right: 28px; width:134px; text-align: center; cursor:pointer;
+  }
+
+.westZone span{margin-top: 42px;  display: inline-block;}
+
+.nortZone{position: fixed;
+    background: #7aff4f;
+    font-size: 40px;
+    z-index: 11111;
+    border-radius: 100px;
+    height: 125px;
+    box-shadow: 1px 0px 7px 7px #ccc;
+    opacity: .8;
+    bottom: 14px;
+    left: 28px; width:134px; text-align: center; cursor:pointer;
+  }
+
+.nortZone span{margin-top: 42px;  display: inline-block;}
+
+.southZone{position: fixed;
+    background: #d02d25;
+    font-size: 40px;
+    z-index: 11111;
+    border-radius: 100px;
+    height: 125px;
+    box-shadow: 1px 0px 7px 7px #ccc;
+    opacity: .8;
+    bottom: 14px;
+    right: 28px; width:134px; text-align: center; cursor:pointer;
+  }
+
+.southZone span{margin-top: 42px;  display: inline-block;}
+.eastZone span a, .westZone span a, .nortZone span a, .southZone span{color:#000;}
+
+
+
+
